@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="style.css" rel="stylesheet" type="text/css">
+        <title>PBW2020-Pertemuan5-E</title>
+        <style>
+            *{
+                margin: 0px;
+                padding: 0px;
+                box-sizing: border-box;
+            }
+        
+            body{
+                padding: 80px;
+                width: auto;
+                height: 100%;
+                font-family: 'Times New Roman', Times, serif;
+                background : url("image.jpg") no-repeat center;
+                background-size : cover;
+                display : flex;
+                align-items : center;
+                justify-content : center;
+            }
+            .main{
+                width: 500px;
+                min-height: 460px;
+                padding: 10px;
+                margin: auto;
+                border-radius: 20px;
+                border: solid 1px #css;
+                box-shadow: 1px 2px 5px rgba(0,0,0,.31);
+                background-color: salmon;
+            }
+            input[type=text], input[type=password], select, textarea{
+                width: 50%;
+                padding: 5px;
+                border: 1px solid #css;
+                resize: vertical;
+            }
+            
+            button{
+                width: 30%;
+                height: 35px;
+                background-color: #b6afaf;
+                border-radius: 10px;
+                margin-top: 15px;
+                margin-left: 178px;
+                margin-bottom: 10px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="main">
+            <h1 align="center">REGISTRATION</h1>
+            <hr><br>
+            <label for="nama" style="margin-left: 60px;">Nama</label>
+                <input type="text" id="nama" name="nama" placeholder="Name" style="margin-left: 75px;">
+            <br><br>
+            <label for="username" style="margin-left: 60px;">Username</label>
+                <input type="text" id="Username" name="Username" placeholder="Username" style="margin-left: 48px;">
+            <br><br>
+            <label for="password" style="margin-left: 60px;">Password</label>
+                <input type="password" id="password" name="password" placeholder="Password" style="margin-left: 53px;">
+            <br><br>
+            <label for="jeniskelamin" style="margin-left: 60px;">Jenis Kelamin</label>
+                <input type="radio" id="Pria" name="gender" value="Pria" style="margin-left: 25px;">
+            <label for="Pria">Pria</label>
+                <input type="radio" id="Wanita" name="gender" value="Wanita" style="margin-left: 10px;">
+            <label for="Wanita">Wanita</label>
+            <br><br>
+            <label for="hobby" style="margin-left: 60px;">Hobby</label>
+                <input type="checkbox" id="Coding" name="Coding" style="margin-left: 72px;">
+            <label for="Coding">Coding</label>
+                <input type="checkbox" id="Design" name="Design" style="margin-left: 10px;">
+            <label for="Design">Design</label>
+                <input type="checkbox" id="Reading" name="Reading" style="margin-left: 10px;">
+            <label for="Reading">Reading</label>
+            <br><br>
+            <label for="Negara" style="margin-left: 60px;">Negara</label>
+            <select id="Negara" name="Negara" style="margin-left: 67px;">
+                <option value="Indonesia">Indonesia</option>
+                <option value="Malaysia">Malaysia</option>
+                <option value="Singapura">Singapura</option>
+                <option value="Thailand">Thailand</option>
+                <option value="Korea">Korea</option>
+            </select>
+            <br><br>
+            <label for="Komentar" style="margin-left: 65px;">Komentar</label>
+            <textarea name="message" rows="5" cols="20" style="margin-left: 45px;"></textarea>
+            <br>
+            <button type="button">Submit</button>
+        </div>
+    </body>
+</html>
